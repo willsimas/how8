@@ -11,38 +11,21 @@ class _BeachPageState extends State<BeachPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: ClipOval(
-                  child: Image.network(
-                      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHVzZXIlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D')),
-              accountName: Text('Username'),
-              accountEmail: Text('User Email'),
-            ),
-            ListTile(
-                leading: Icon(Icons.home),
-                title: Text('Home'),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/home');
-                }),
-            ListTile(
-                leading: Icon(Icons.exit_to_app),
-                title: Text('Logout'),
-                onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/');
-                }),
-          ],
-        ),
-      ),
       appBar: AppBar(
         title: Container(
           width: MediaQuery.of(context).size.width,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Praias'),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushReplacementNamed('/home');
+                },
+                child: Row(children: [
+                  Icon(Icons.chevron_left, size: 35),
+                  Text('Praias')
+                ]),
+              ),
               Container(
                   width: 85,
                   height: 85,
@@ -87,7 +70,7 @@ class _BeachPageState extends State<BeachPage> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('Praia do Cascalho',
@@ -132,7 +115,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -176,7 +159,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -220,7 +203,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -264,7 +247,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -308,7 +291,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -352,7 +335,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',
@@ -396,7 +379,7 @@ class _BeachPageState extends State<BeachPage> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text('Praia do Cascalho',

@@ -21,13 +21,13 @@ class _BeachDetailsState extends State<BeachDetails> {
                 onTap: () {
                   Navigator.of(context).pushReplacementNamed('/beach_page');
                 },
-                child: Row(children: [
-                  Icon(Icons.arrow_left, size: 35),
+                child: Row(
+                  children: [
+                  Icon(Icons.chevron_left, size: 35),
                   Text('Detalhes da Praia')
                 ]),
               ),
               Container(
-                  width: 168,
                   height: 85,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -42,6 +42,13 @@ class _BeachDetailsState extends State<BeachDetails> {
                   )),
             ],
           ),
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: 200,
+          child: Image.asset('assets/images/beach_image.png')
         ),
       ),
     );
