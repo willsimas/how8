@@ -9,10 +9,6 @@ Bem-vindo ao Guia Turístico App! Este aplicativo foi desenvolvido para proporci
 - **Bottom Navigation**: Explore as opções de navegação fácil, incluindo Home, Saved Points, Settings e Logout.
 - **Lista de Locais**: Descubra restaurantes, praias, bancos, farmácias e outros pontos interessantes na região.
 
-## Capturas de Tela
-
-Inclua capturas de tela ou GIFs que demonstrem a aparência e a usabilidade do seu aplicativo. Isso ajudará os usuários a visualizarem as principais características do Guia Turístico App.
-
 ## Como Usar
 
 1. Faça o download do aplicativo na loja de aplicativos.
