@@ -9,13 +9,6 @@ Bem-vindo ao Guia Turístico App! Este aplicativo foi desenvolvido para proporci
 - **Bottom Navigation**: Explore as opções de navegação fácil, incluindo Home, Saved Points, Settings e Logout.
 - **Lista de Locais**: Descubra restaurantes, praias, bancos, farmácias e outros pontos interessantes na região.
 
-## Como Usar
-
-1. Faça o download do aplicativo na loja de aplicativos.
-2. Faça login usando suas credenciais ou crie uma nova conta.
-3. Explore a tela inicial e utilize a Bottom Navigation para acessar diferentes seções.
-4. Descubra locais interessantes na lista de locais e obtenha informações úteis.
-
 ```bash
 # Exemplo de comandos para instalação e execução
 flutter pub get
