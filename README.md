@@ -11,7 +11,9 @@ Bem-vindo ao Guia Turístico App! Este aplicativo foi desenvolvido para proporci
 
 ```bash
 # Exemplo de comandos para instalação e execução
+# INSTALAR DEPENDENCIAS
 flutter pub get
+# EXECUTAR O APP
 flutter run
 
 
